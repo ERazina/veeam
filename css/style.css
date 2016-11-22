@@ -5,6 +5,10 @@ body {
 }
 
 /*общие классы*/
+h1 {
+  font-size: 30px;
+}
+
 h2{
 	font-size: 24px;
 	font-weight: bold;
@@ -28,6 +32,10 @@ a {
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
+}
+.container{
+  padding: 0 10px;
+  max-width: 960px;
 }
 
 /*header*/
@@ -127,45 +135,26 @@ a {
   background-color: #0067c5;
   display: inline-block;
   padding: 30px 16px;
-  /*
-	margin-top: 34px;
-	margin-right: auto;
-	margin-left:auto;
-*/
-  /*	position: relative;*/
 }
 
 /*форма*/
 
 #form {
-  /*	height: 470px;*/
   background-color: #1a76cb;
   padding: 0 20px;
-  /*
-    position: absolute;
-    top: 34px;
-    right: 16px;
-*/
   box-shadow: #3482ca;
-  /*	z-index: 2;*/
 }
 input {
   width: 100%;
   font-size: 14px;
   margin: 10px 0;
-  /*	margin-top: 10px;*/
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
-  /*	margin-left: 20px;*/
 }
 .white-block {
   width: 100px;
   height: 43px;
-  /*	position: absolute;*/
-  /*	z-index: 2;*/
-  /*	top: 46px;*/
-  /*	left: 43px;*/
   background-color: #fff;
   color: #f13037;
   text-transform: uppercase;
@@ -176,26 +165,14 @@ input {
   font-size: 30px;
 }
 .text-block-main {
-  /*
-	position: absolute;
-	top: 134px;
-	left: 43px;
-*/
   width: 454 px;
   color: #fff;
   font-weight: 100;
 }
 #NetApp {
-  /*	position: absolute;*/
-  /*
-	top: 288px;
-	left: 43px;
-*/
   padding-bottom: 30px;
 }
-h1 {
-  font-size: 30px;
-}
+
 #main_image {
   width: 100%;
 }
@@ -226,10 +203,18 @@ h1 {
   background-color: #e5e9ee;
   padding: 35px 0;
 }
+
+.link{
+  padding: 0 10px;
+  font-size: 14px;
+  color: #2b9ccc;
+}
+
 ul.video-li {
   list-style: none;
   margin: 0;
   paddig-left: 0;
+-webkit-padding-start: 0px;
 }
 ul.video-li>li {
   display: inline-block;
@@ -260,12 +245,11 @@ a.active {
   text-decoration: underline;
   padding-top: 3%;
 }
-h2 {
-  font-weight: bold;
+a.nav_link:hover {
+  color: #53af31;
+  text-decoration: underline;
 }
-h3 {
-  font-weight: bold;
-}
+
 hr {
   margin-top: 0;
   width: 100%;
@@ -333,10 +317,7 @@ a.nav_link:first-child {
 a.active {
   text-transform: uppercase;
 }
-a.nav_link:hover {
-  color: #53af31;
-  text-decoration: underline;
-}
+
 .inline:first-child {
   padding-left: 0;
 }
@@ -367,6 +348,10 @@ img.right_image {
 }
 #about {
   background-color: #e5e9ee;
+}
+
+.storage-system{
+  width: 100%;
 }
 footer {
   background-color: #393939;
