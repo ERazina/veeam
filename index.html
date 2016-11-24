@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
 	<meta name="keywords" content="пbackup, recovery">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
+
 <body>
 	<div class="wrapper-top">
 		<div class="wrap-blue"></div>
@@ -16,11 +19,12 @@
 			<div class="row">
 				<div class="col-md-9 col-xs-6 col-sm-6">
 					<div class="img-logo">
-						<img src="img/main.jpg">
+						<img src="img/main.jpg" class="logo-image">
 					</div>
 
 				</div>
-				<div class="col-md-3 col-xs-6 col-sm-6">
+				<div class="col-md-3 col-xs-6 col-sm-6 head-right">
+					<div class="triangle"></div>
 					<div class="green"></div>
 					<div class="blue"></div>
 					<div class="box-blue"></div>
@@ -63,7 +67,12 @@
 									<br/>
 									<input name="name" placeholder="Choose you hypervisor..." type="text" required>
 									<br/>
-									<input name="name" placeholder="Choose you hypervisor..." type="text" required>
+									<select name="name" required>
+										<option default selected value="0">Choose you hypervisor...</option>
+										<option value="1">#1</option>
+										<option value="2">#2</option>
+									</select>
+
 									<br/>
 									<input type="submit" value="download" id="button">
 									<br/>
@@ -79,12 +88,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 box-pad">
-					<video width="100%" poster="img/integration.jpg"></video>
+					<iframe width="100%" src="https://www.youtube.com/embed/FucAXe7ea-E"  poster="img/integration.jpg" frameborder="0" allowfullscreen></iframe>
+					<!-- <video width="100%" poster="img/integration.jpg"></video> -->
 				</div>
 				<div class="col-md-8 box-pad">
-					<p><strong>Veeam®</strong> and <strong>NetApp</strong> enable Availability for the Always-On Enterprise<sup>TM</sup>. Veeam’s integration with NetApp helps orchestrate Data ONTAP to create application-consistent backups and recovery from NetApp storage
+					<p class="letters-18"><strong>Veeam®</strong> and <strong>NetApp</strong> enable Availability for the Always-On Enterprise<sup>TM</sup>. Veeam’s integration with NetApp helps orchestrate Data ONTAP to create application-consistent backups and recovery from NetApp storage
 						snapshots. With Veeam, NetApp FAS and FlexArray V-Series customers can create image-based backups as often as needed ― even during business hours ― with little to no impact on production environments to deliver recovery time objectives (RTO) and
-						recovery point objectives (RPO), or RTPO™ of 15 minutes for ALL applications and data, and for all applications in vSphere and Hyper-V environments.</p>
+						recovery point objectives (RPO), or RTPO<sup>TM</sup> of 15 minutes for ALL applications and data, and for all applications in vSphere and Hyper-V environments.</p>
 					<ul class="video-li">
 						<li><img src="img/tele.png" alt="product overview" class="icon"><a class="link">Product overview</a></li>
 						<li><img src="img/tele.png" alt="top 10 reasons to choose Veeam" class="icon"><a class="link">Top 10 Reasons to Choose Veeam</a></li>
@@ -96,16 +106,15 @@
 	<nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-md3 col-sm-3 col-xs-3 inline"><a href="#" class="active nav-link">integration</a></div>
-				<div class="col-md2 col-sm-6 col-xs-2 inline"><a href="#" class="nav_link">backup</a></div>
-				<div class="col-md3 col-sm-6 col-xs-3 inline"><a href="#" class="nav_link">recovery</a></div>
-				<div class="col-md4 col-sm-6 col-xs-4 inline">
-					<input type="submit" value="download now" id="nav_button">
-				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3"><a href="#" class="active nav-link">integration</a></div>
+				<div class="col-md-2 col-sm-6 col-xs-2"><a href="#" class="nav_link">backup</a></div>
+				<div class="col-md-3 col-sm-6 col-xs-3"><a href="#" class="nav_link">recovery</a></div>
+				<div class="col-md-4 col-sm-6 col-xs-4"><a href="#" id="nav_button">download now</a></div>
 			</div>
 		</div>
+		</div>
 	</nav>
-	<hr/>
+	<hr class="navigation">
 	<div class="part1">
 		<div class="container">
 			<div class="row">
@@ -113,43 +122,39 @@
 					<h2>Explore the benefits of Veeam integration with NetApp</h2>
 					<p>Veeam's enterprise-level, near-continuous data protection (near-CDP) delievers the brst recovery time and point objects (RYPO<sup>TM</sup>) for all applications in VMware vSphere enviroments. The combination of NetApp's <strong>low PRO</strong> capabilities
 						and Veeam's <strong>low RTO</strong> enablement allows users to:</p>
-
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="part1">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 box-pad">
-					<ul>
-						<li>Create backups from storage snapshots up to <strong>20 times faster</strong> than competitive offerings</li>
-						<li>Improve DB protection by crating instant, secondary backups from storage</li>
-					</ul>
-					<figure>
-						<p class="center"><img src="http://img.veeam.com/product_pages/v8/netapp_2_t.jpg"></p>
-					</figure>
-					<figcaption>
-						<p class="center">Component of a Veeam backup with FAS stroager</p>
-					</figcaption>
-				</div>
-				<div class="col-xs-6 col-md-6 col-sx-6 box-pad">
-					<ul>
-						<li>Recover Individual items or entire VMs quickly and efficiently from <strong>NetApp Snapshot&#169;, SnapMirror&#169;</strong> and <strong>SnapVault&#169;</strong> with <strong>Veeam Explorer<sup>TM</sup> for Storage Snapshots</strong></li>
-					</ul>
-					<figure>
-						<p class="center"><img src="http://img.veeam.com/product_pages/v8/netapp_1_t.jpg" alt="">
-							<p>
-								<figcaption>
-									<p class="center">Veean Explorer for Storage Snapshots</p>
-								</figcaption>
-					</figure>
-				</div>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 box-pad">
+				<ul>
+					<li>Create backups from storage snapshots up to <strong>20 times faster</strong> than competitive offerings</li>
+					<li>Improve DB protection by crating instant, secondary backups from storage</li>
+				</ul>
+				<figure>
+					<p class="center"><img src="http://img.veeam.com/product_pages/v8/netapp_2_t.jpg"></p>
+				</figure>
+				<figcaption>
+					<p class="center">Component of a Veeam backup with FAS stroager</p>
+				</figcaption>
 			</div>
+			<div class="col-xs-6 col-md-6 col-sx-6 box-pad">
+				<ul>
+					<li>Recover Individual items or entire VMs quickly and efficiently from <strong>NetApp Snapshot&#169;, SnapMirror&#169;</strong> and <strong>SnapVault&#169;</strong> with <strong>Veeam Explorer<sup>TM</sup> for Storage Snapshots</strong></li>
+				</ul>
+				<figure>
+					<p class="center"><img src="http://img.veeam.com/product_pages/v8/netapp_1_t.jpg" alt="">
+						<p>
+							<figcaption>
+								<p class="center">Veeam Explorer for Storage Snapshots</p>
+							</figcaption>
+				</figure>
+			</div>
+
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-12">
@@ -166,7 +171,6 @@
 				</ul>
 			</div>
 			<div class="col-xs-6 col-md-6 box-pad">
-
 				<ul>
 					<li><strong>Verified protection</strong> by automating the testing of backups to guarantee the recoveriability of ever file, application and virtual machine (VM)</li>
 					<li><strong>A cloud ready platform</strong> that enhaces data avalability by providing an efficient way get backups off site to a service provider</li>
@@ -176,189 +180,232 @@
 				<div class="row">
 					<col-md-12>
 						<figure>
-							<img src="img/schema.png">
+							<img src="img/schema.png" class="schema" alt="schema">
+							<figcaption>
+								<p>Ready for the cloud</p>
+							</figcaption>
 						</figure>
-						<figcaption>
-							<p>Ready for the cloud</p>
-						</figcaption>
-						<img src="img/video.png" alt="whatch"><a class="link-original" href="#">Whatch video on how Veeam integrates with NetApp</a>
+						<div class="link-box">
+							<img src="img/video.png" class="icon" alt="whatch video"><a class="link-original" href="#">Whatch video on how Veeam integrates with NetApp</a>
+						</div>
 					</col-md-12>
 				</div>
 			</div>
-			<div class="b-grey">
-				<div class="container">
-					<div class="row">
-						<h2>Perform fast backups from NetApp Storage Snapshots</h2>
-						<h3>Dramatically improve vSphere backup</h3>
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-8 box-pad">
-									<p>Taking VMWare vSphere snapshots can produce a serious burden on virtual machine(VM) performance, and it can take considerable effort by administratirs to overcome this technicsl chsllenge and meet the required SLAs.</p>
-									<p>Veeam dramaticaly improves this process providing built-in integration with your production storage, leveraging storage snapshots functionality to reduce the impact on the enviroment from vSphere snapshot removal during backup and replication.</p>
-									<p>Don't be stuck with once-a-day backups for I/O intensive workloads - make backups and replicas as often as every 15 minutes!</p>
-									<img src="img/video.png"><a href="#" class="link-original">Watch video on how Veeam integrates with NetApp</a></br>
-									<img src="img/video.png"><a href="#" class="link-original">Watch video about Veeam solution for HP StoreVirtual VSA</a>
-								</div>
-
-								<div class="col-xs-6 col-md-4 box-pad">
-									<img src="http://img.veeam.com/product_pages/v8/screenshots/220_san_snapshot_hl.png" class="right_image" class="link-original">
-									<p>A job keeps a VM snapshot for only a brief moment, which results in instant VM snapshot commit</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-8">
-							<h3>Fast sPhere backups with low PROs</h3>
-							<p>Storage snapshots can be taken frequently with minimal impact to the production environment, but this can’t be your only backup solution. What if storage itself goes down, or gets corrupted? Even with storage-based replication, you need to take
-								your data out of the single fault domain. This is why many customers prefer to additionally make true backups stored on different storage. </p>
-							<p>Veeam combines best of both worlds with vSphere snapshots for application-consistent backups and storage snapshots for fast recovery point objectives. Now you can:</p>
-							<ol>
-								<li>Run backups at any time and frequency, dramatically improving achievable RPOs</li>
-								<li>Speed up the process—back up from storage snapshots up to 20x faster than with competitive solutions</li>
-								<li>Dramatically reduce the impact of backup activities on your production environment</li>
-							</ol>
-							<img src="img/block.png"><a href="#" class="link-original">Read blog post about Veeam and NetApp</a>
-						</div>
-						<div class="col-md-4">
-							<video poster="img/integration.jpg" class="right_image"></video>
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-8">
-							<h3>How it works</h3>
-							<ul>
-								<li>Analyzes which VMs in the job have disks on supported storage.</li>
-								<li>Triggers a vSphere snapshot for all VMs located on the same storage volume. (As a part of a vSphere snapshot, Veeam’s application-aware processing of each VM is performed normally.)</li>
-								<li>Triggers a snapshot of said storage volume once all VM snapshots have been created.</li>
-								<li>Retrieves the CBT information for VM snapshots created on step 2.</li>
-								<li>Immediately triggers the removal of the vSphere snapshots on the production VMs.</li>
-								<li>Mounts the storage snapshot to one of the backup proxies connected into the storage fabric.</li>
-								<li>Reads new and changed virtual disk data blocks directly from the storage snapshot and transports them to the backup repository or replica VM.</li>
-								<li>Triggers the removal storage snapshot once all VMs have been backed up.</li>
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<img src="http://img.veeam.com/product_pages/v8/bfss-scheme-t.jpg" class="right_image">
-							<p>Veeam Explorer for storage snapshots</p>
-						</div>
-						<div class="col-md-12">
-							<p>As a result, VMs run off snapshots for the shortest possible time, while jobs obtain data from VM snapshot files preserved in the storage snapshot. Because of this, VM snapshots do not get a chance to grow large and can be committed very quickly
-								without overloading production storage with extended merge procedure, as is the case with classic techniques for backing up from VM snapshots.</p>
-						</div>
-					</div>
-					<hr>
-
+		</div>
+	</div>
+	<div class="b-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Perform fast backups from NetApp Storage Snapshots</h2>
+					<h3>Dramatically improve vSphere backup</h3>
 				</div>
 			</div>
-			<div class="container">
-				<div class="col-md-12">
-					<h2>Enjoy quick granular recovery for NetApp Storage Snapshots</h2>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-8 box-pad">
+					<p>Taking VMWare vSphere snapshots can produce a serious burden on virtual machine(VM) performance, and it can take considerable effort by administratirs to overcome this technicsl chsllenge and meet the required SLAs.</p>
+					<p>Veeam dramaticaly improves this process providing built-in integration with your production storage, leveraging storage snapshots functionality to reduce the impact on the enviroment from vSphere snapshot removal during backup and replication.</p>
+					<p>Don't be stuck with once-a-day backups for I/O intensive workloads - make backups and replicas as often as every 15 minutes!</p>
+					<div class="link-box">
+						<img src="img/video.png" class="icon"><a href="#" class="link-original icon">Watch video on how Veeam integrates with NetApp</a></br>
+					</div>
+					<div class="link-box">
+						<img src="img/video.png" class="icon"><a href="#" class="link-original icon">Watch video about Veeam solution for HP StoreVirtual VSA</a>
+					</div>
 				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 box-pad">
+					<img src="http://img.veeam.com/product_pages/v8/screenshots/220_san_snapshot_hl.png" class="right_image" class="link-original">
+					<p>A job keeps a VM snapshot for only a brief moment, which results in instant VM snapshot commit</p>
+				</div>
+			</div>
+			<hr class="hr">
+			<div class="row">
 				<div class="col-md-8">
-					<h3>Restore from a storage in minutes!</h3>
-					<p>With Veeam Explorer for Storage Snapshots, you can take advantage of the low overhead that periodic storage snapshots offer for low recovery point objectives, and let Veeam Backup & Replication<sup>TM</sup> automate the whole recovery process for
-						you, bringing you low recovery time objectives as well. You can:</p>
-					<ol>
-						<li>Recover guest OS files, application items or even an entire VM from a storage snapshot in two minutes or less</li>
-						<li>Restore directly from storage snapshots, eliminating the need for staging snapshot contents to disk and intermediate restores</li>
-						<li>Reduce the time needed to mount snapshots by 10x or more compared to manual processes, lowering your RTOs while avoiding human errors that can occur during critical recovery steps such as mounting snapshots</li>
-						<p>And it’s easy to use — just a few clicks in the Veeam Backup & Replication interface and you can restore directly from a HPE, NetApp, EMC or NimbleNEW storage snapshot. Veeam Explorer for Storage Snapshots is also included in Veeam Backup<sup>TM</sup>							Free Edition.</p>
-					</ol>
-					<img src="img/video"><a href="#" class="link-original">Watch video on how Veeam integrates with NetApp</a>
-					<br/>
-					<img src="img/block"><a href="#" class="link-original">Read blog post about Veeam and NetApp</a>
+					<h3>Fast sPhere backups with low PROs</h3>
+					<p>Storage snapshots can be taken frequently with minimal impact to the production environment, but this can’t be your only backup solution. What if storage itself goes down, or gets corrupted? Even with storage-based replication, you need to take your
+						data out of the single fault domain. This is why many customers prefer to additionally make true backups stored on different storage. </p>
+					<p>Veeam combines best of both worlds with vSphere snapshots for application-consistent backups and storage snapshots for fast recovery point objectives. Now you can:</p>
+					<ul>
+						<li>Run backups at any time and frequency, dramatically improving achievable RPOs</li>
+						<li>Speed up the process—back up from storage snapshots up to 20x faster than with competitive solutions</li>
+						<li>Dramatically reduce the impact of backup activities on your production environment</li>
+					</ul>
+					<div class="link-box">
+						<img src="img/block.png" class="icon"><a href="#" class="link-original">Read blog post about Veeam and NetApp</a>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<figure>
-						<img src="http://img.veeam.com/product_pages/v8/screenshots/san_IR.png" class="right_image"></div>
-				<figcaption>
-					<p class="center">Veeam Explorer for stprage snapshots
-						<p>
-				</figcaption>
+					<iframe height="100%" src="https://www.youtube.com/embed/Fhxa8QDU2iw" frameborder="0" allowfullscreen></iframe>
+					<!-- <video poster="img/integration.jpg" class="right_image"></video> -->
+				</div>
+			</div>
+			<hr class="hr">
+			<div class="row">
+				<div class="col-md-8">
+					<h3>How it works</h3>
+					<ul>
+						<li>Analyzes which VMs in the job have disks on supported storage.</li>
+						<li>Triggers a vSphere snapshot for all VMs located on the same storage volume. (As a part of a vSphere snapshot, Veeam’s application-aware processing of each VM is performed normally.)</li>
+						<li>Triggers a snapshot of said storage volume once all VM snapshots have been created.</li>
+						<li>Retrieves the CBT information for VM snapshots created on step 2.</li>
+						<li>Immediately triggers the removal of the vSphere snapshots on the production VMs.</li>
+						<li>Mounts the storage snapshot to one of the backup proxies connected into the storage fabric.</li>
+						<li>Reads new and changed virtual disk data blocks directly from the storage snapshot and transports them to the backup repository or replica VM.</li>
+						<li>Triggers the removal storage snapshot once all VMs have been backed up.</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<img src="http://img.veeam.com/product_pages/v8/bfss-scheme-t.jpg" class="right_image">
+					<p>Veeam Explorer for storage snapshots</p>
+				</div>
+				<div class="col-md-12">
+					<p>As a result, VMs run off snapshots for the shortest possible time, while jobs obtain data from VM snapshot files preserved in the storage snapshot. Because of this, VM snapshots do not get a chance to grow large and can be committed very quickly
+						without overloading production storage with extended merge procedure, as is the case with classic techniques for backing up from VM snapshots.</p>
+				</div>
+				<hr class="hr">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Enjoy quick granular recovery for NetApp Storage Snapshots</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Restore from a storage in minutes!</h3>
+				<p>With Veeam Explorer for Storage Snapshots, you can take advantage of the low overhead that periodic storage snapshots offer for low recovery point objectives, and let Veeam Backup & Replication<sup>TM</sup> automate the whole recovery process for
+					you, bringing you low recovery time objectives as well. You can:</p>
+				<ol>
+					<li>Recover guest OS files, application items or even an entire VM from a storage snapshot in two minutes or less</li>
+					<li>Restore directly from storage snapshots, eliminating the need for staging snapshot contents to disk and intermediate restores</li>
+					<li>Reduce the time needed to mount snapshots by 10x or more compared to manual processes, lowering your RTOs while avoiding human errors that can occur during critical recovery steps such as mounting snapshots</li>
+					<p>And it’s easy to use — just a few clicks in the Veeam Backup & Replication interface and you can restore directly from a HPE, NetApp, EMC or NimbleNEW storage snapshot. Veeam Explorer for Storage Snapshots is also included in Veeam Backup<sup>TM</sup>						Free Edition.</p>
+				</ol>
+				<div class="link-box">
+					<img src="img/video.png" class="icon" alt="whatch video"><a href="#" class="link-original">Watch video on how Veeam integrates with NetApp</a>
+				</div>
+				<div class="link-box">
+					<img src="img/block.png" class="icon" alt="read blog"><a href="#" class="link-original">Read blog post about Veeam and NetApp</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<figure>
+					<img src="http://img.veeam.com/product_pages/v8/screenshots/san_IR.png" class="right_image" alt="Veeam Explorer for storage snapshots">
+
+					<figcaption>
+						<p class="center">Veeam Explorer for storage snapshots</p>
+					</figcaption>
 				</figure>
 			</div>
-			<hr>
-			<div class="container">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<h3>How it works</h3>
-					<p>Veeam works with HP and NetApp storage products to granular recovery from storage snapshots. Here's how it works.</p>
-					<figure>
-						<img src="img/schema.png" class="storage-system">
-						<hr>
-						<figcaption>
-							For image description
-						</figcaption>
-					</figure>
-
-					</hr>
-				</div>
+			<div class="col-md-12">
+				<hr class="hr">
 			</div>
-			<div class="container">
-				<div class="col-md-5">
-					<h3>Supported storage:</h3>
-					<p>For NetApp, all Data ONTAP based storage, including:</p>
-				</div>
-				<div class="col-md-3">
-					<ul>
-						<li>NetApp FAS</li>
-						<li>NetApp FlexArray (V-Series)</li>
-					</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<h3>How it works</h3>
+			<p>Veeam works with HP and NetApp storage products to granular recovery from storage snapshots. Here's how it works.</p>
+			<figure>
+				<img src="img/schema.png" class="storage-system" alt="storage system">
+				<figcaption>
+					<p class="center">For image description</p>
+				</figcaption>
+			</figure>
+			<hr class="hr">
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-md-5">
+			<h3>Supported storage:</h3>
+			<p>For NetApp, all Data ONTAP based storage, including:</p>
+		</div>
+		<div class="col-md-3">
+			<ul>
+				<li>NetApp FAS</li>
+				<li>NetApp FlexArray (V-Series)</li>
+			</ul>
 
-				</div>
+		</div>
+		<div class="col-md-4">
+			<ul>
+				<li>NetApp Data ONTAP Edge VSA</li>
+				<li>IBM N Series</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div class="b-grey">
+		<div class="container">
+			<div class="col-md-12">
+				<h2>About Veeam Software</h2>
+				<p>Veeam&#174; enables the Always-On Business<sup>TM</sup> by providing solutions that deliver Availability for the Modern Data Center<sup>TM</sup>, which provides recovery time and point objectives (RTPO<sup>TM</sup>) of less than 15 minutes for the
+					majority of applications and data. Veeam recognizes the challenges in keeping a business up and running at all times and addresses them with solutions that provide high-speed recovery, data loss avoidance, verified protection, risk mitigation and
+					complete visibility. Veeam Backup & Replication<sup>TM</sup> leverages technologies that enable the modern data center, including VMware vSphere, Microsoft Hyper-V, NetApp storage, and HP 3PAR StoreServ and StoreVirtual Storage, to help organizations
+					meet RTPOs, save time, mitigate risks, and dramatically reduce capital and operational costs. Veeam Availability Suite<sup>TM</sup> provides all of the benefits and features of Veeam Backup & Replication along with advanced monitoring, reporting
+					and capacity planning for the backup infrastructure. </p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
 				<div class="col-md-4">
-					<ul>
-						<li>NetApp Data ONTAP Edge VSA</li>
-						<li>IBM N Series</li>
-					</ul>
+					<p>Copyright&#169; 2015 Veeam&#174; Software</p>
+						<ul class="footer-list">
+					<li class="footer-li"><a id="footer_link_0">Privacy policy & Cookies</a>
+					</li>
+				</div>
+				<div class="col-md-2">
+					<li class="footer-li"><a class="footer-link">white papers</a></li>
+					<li class="footer-li"><a class="footer-link">webinars</a></li>
+					<li class="footer-li"><a class="footer-link">product demos</a></li>
+				</div>
+				<div class="col-md-2">
+					<li class="footer-li"><a class="footer-link">webinars</a></li>
+					<li class="footer-li"><a class="footer-link">veeam live</a></li>
+				</div>
+				<div class="col-md-2">
+				<li class="footer-li"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="21px">
+							<image x="0px" y="0px" width="21px" height="21px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgLBzkk/A5tAAAAgUlEQVQoz8WT2w1AQBRED/GvhS1BB7YVnehICasDWwId6GB8kAiXWInE7N9kcnfOPjKJROWpwVfR4tId6Zmo8QdXVp0QQv5oX01tAIejOvlm5iCEgt3MYs1pWDORCEDcStwWCBvQutqnArvKJ6yQjvXFxf4etW/A0cLp8AHI/v4FC/f6pPzq8jaJAAAAAElFTkSuQmCC"
+							/>
+						</svg>
+						<a class="footer-link">facebook</a></li>
+						<li class="footer-li"><svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="21px" height="20px">
+<image  x="0px" y="0px" width="21px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUGQ3GcyFKAAAAo0lEQVQoz9WSQRGDMBBFP1WAhDgoEpCABCQgASeVwFQBdRAcVAJ18HoJyYbkwKkz/XvZ2X3zZzfZBnRRt6vg79FNr1OFQytWI0I45lRPaM/AHvIHCuFYSnRGtEz4kB9BiXo6AyTXqLTWU1tlua62FkwV16XmKt3lTp69hrorTLTGseVtmzm6myEcPuthv2A02BzfOKrJjnDTR5IrZpYkNX90r18BZx6f0CokWgAAAABJRU5ErkJggg==" />
+</svg>
+</svg>
+						<a class="footer-link">twitter</a></li>
+				</div>
+				<div class="col-md-2">
+						<li class="footer-li">
+							<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="21px" height="21px">
+<image  x="0px" y="0px" width="21px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUFyAdL1CxAAAAiklEQVQoz8WRyw2DMBBEnyMKoAMoxSVQQqjEpILQAaSSpAUqwFQyXIBwMTYHxKy02sPTfmaNRKIeqeD1aI2hP0LNdpYBSsaUrm9KXFrXqLKt6pkoeOL5AI4XP8DuJmmVFbKSvkKoEks0KxAyy9PRkcPflSyAOipgoMXHXpDvcgQ99PUm9MS3bt91BkEYN0AhRN88AAAAAElFTkSuQmCC" />
+</svg>
+						<a class="footer-link">linkedin</a></li>
+
+						<li class="footer-li"><svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="21px" height="20px">
+<image  x="0px" y="0px" width="21px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUGBy12DD5AAAA4ElEQVQoz63S0U0CQRDG8R/Gd5cK2A68ErYD7QCsQKhErUCsgBK4q0A64OiADsaHO5RA0Avxm2zmYf87mflmRxEG6mYoeIo+YTEMzWr3WkvU/bmATi08epMtNWh+q5okCbt/HIsKE42pOxuT46vRNb4ujI3OYnxkXnTaxizWsY6XEKLqcxfbDjlUbdVarUZWZEVBpaA9baC1s1OZWatkK3Of3s0PwO2FGTZ4QCsN9fXjZ7nn6LT3N9vgWTltIOs+x95eUttLXjWyZf/426yIVZQokY5MSlGixOoAXLWtP/UF7phtHBeSoHMAAAAASUVORK5CYII=" />
+</svg>
+					<a class="footer-link">youtube</a></li>
+				</ul>
+
 				</div>
 			</div>
-			<div class="b-grey">
-				<div class="container">
-					<div class="col-md-12">
-						<h2>About Veeam Software</h2>
-						<p>Veeam&#174; enables the Always-On Business<sup>TM</sup> by providing solutions that deliver Availability for the Modern Data Center<sup>TM</sup>, which provides recovery time and point objectives (RTPO<sup>TM</sup>) of less than 15 minutes for the
-							majority of applications and data. Veeam recognizes the challenges in keeping a business up and running at all times and addresses them with solutions that provide high-speed recovery, data loss avoidance, verified protection, risk mitigation and
-							complete visibility. Veeam Backup & Replication<sup>TM</sup> leverages technologies that enable the modern data center, including VMware vSphere, Microsoft Hyper-V, NetApp storage, and HP 3PAR StoreServ and StoreVirtual Storage, to help organizations
-							meet RTPOs, save time, mitigate risks, and dramatically reduce capital and operational costs. Veeam Availability Suite<sup>TM</sup> provides all of the benefits and features of Veeam Backup & Replication along with advanced monitoring, reporting
-							and capacity planning for the backup infrastructure. </p>
-					</div>
-				</div>
-			</div>
-			<footer>
-				<div class="container">
-					<div class="col-md4">
-						<p>Copyright&#169; 2015 Veeam&#174; Software</p>
-						<a>Privacy policy & Cookies</a></div>
-					<div class="col-md-2">
-						<a class="footer_link">white papers</a>
-						<a class="footer_link">webinars</a>
-						<a class="footer_link">product demos</a>
-					</div>
-					<div class="col-md-2">
-						<a class="footer_link">webinars</a>
-						<a class="footer_link">veeam live</a>
-					</div>
-					<div class="col-md-2">
-						<label>
-							<a class="footer_link">facebook</a>
-						</label>
-						<label>
-							<a class="footer_link">twitter</a>
-						</label>
-					</div>
-					<div class="col-md-2">
-						<label>
-							<a class="footer_link">linkedin</a>
-						</label>
-						<label>
-							<a class="footer_link">youtube</a>
-						</label>
-					</div>
-				</div>
-			</footer>
-			<script src="js/bootstrap.min.js"></script>>
+		</div>
+	</footer>
+	<script src="js/bootstrap.min.js"></script>>
 </body>
 
 </html>
