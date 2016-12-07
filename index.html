@@ -7,21 +7,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Fast backup and quick recovery">
 	<meta name="keywords" content="пbackup, recovery">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
 	<div class="wrapper-top">
 		<div class="wrap-blue"></div>
 		<div class="container top-fixed">
-			<div class="row">
-				<div class="col-md-9 col-xs-6 col-sm-6">
+			<div class="row unique">
+				<div class="col-md-9 col-xs-6 col-sm-6 head-one">
 					<div class="img-logo">
 						<img src="img/main.jpg" class="logo-image">
 					</div>
-
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-6 head-right">
 					<div class="triangle"></div>
@@ -43,7 +45,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="main-info-block">
-						<div class="col-md-7 col-xs-12">
+						<div class="col-md-7  col-sm-12 col-xs-12">
 							<div class="white-block text-main">new</div>
 							<div class="text-block-main">
 								<h1><b>Fast backup and quick recovery</b> <br/>
@@ -52,7 +54,7 @@
 							</div>
 							<div id="NetApp"><img src="img/logo2.png" alt="NetApp"></div>
 						</div>
-						<div class="col-md-5 col-xs-12">
+						<div class="col-md-5 col-sm-12 col-xs-12">
 							<div id="form">
 								<p class="white">Download</p>
 								<p class="white">Veeam Availability Suite v8</p>
@@ -72,7 +74,6 @@
 										<option value="1">#1</option>
 										<option value="2">#2</option>
 									</select>
-
 									<br/>
 									<input type="submit" value="download" id="button">
 									<br/>
@@ -87,14 +88,14 @@
 	<div class="b-grey">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 box-pad">
-					<iframe width="100%" src="https://www.youtube.com/embed/FucAXe7ea-E"  poster="img/integration.jpg" frameborder="0" allowfullscreen></iframe>
+				<div class="col-md-4 col-sm-4 cols-xs-12 box-pad">
+					<iframe width="100%" src="https://www.youtube.com/embed/FucAXe7ea-E" poster="img/integration.jpg" frameborder="0" allowfullscreen></iframe>
 					<!-- <video width="100%" poster="img/integration.jpg"></video> -->
 				</div>
-				<div class="col-md-8 box-pad">
-					<p class="letters-18"><strong>Veeam®</strong> and <strong>NetApp</strong> enable Availability for the Always-On Enterprise<sup>TM</sup>. Veeam’s integration with NetApp helps orchestrate Data ONTAP to create application-consistent backups and recovery from NetApp storage
-						snapshots. With Veeam, NetApp FAS and FlexArray V-Series customers can create image-based backups as often as needed ― even during business hours ― with little to no impact on production environments to deliver recovery time objectives (RTO) and
-						recovery point objectives (RPO), or RTPO<sup>TM</sup> of 15 minutes for ALL applications and data, and for all applications in vSphere and Hyper-V environments.</p>
+				<div class="col-md-8 col-sm-8 col-sx-12 box-pad">
+					<p class="letters-18"><strong>Veeam&#174</strong> and <strong>NetApp</strong> enable Availability for the Always-On Enterprise<sup>TM</sup>. Veeam’s integration with NetApp helps orchestrate Data ONTAP to create application-consistent backups and recovery from NetApp
+						storage snapshots. With Veeam, NetApp FAS and FlexArray V-Series customers can create image-based backups as often as needed ― even during business hours ― with little to no impact on production environments to deliver recovery time objectives (RTO)
+						and recovery point objectives (RPO), or RTPO<sup>TM</sup> of 15 minutes for ALL applications and data, and for all applications in vSphere and Hyper-V environments.</p>
 					<ul class="video-li">
 						<li><img src="img/tele.png" alt="product overview" class="icon"><a class="link">Product overview</a></li>
 						<li><img src="img/tele.png" alt="top 10 reasons to choose Veeam" class="icon"><a class="link">Top 10 Reasons to Choose Veeam</a></li>
@@ -103,19 +104,21 @@
 			</div>
 		</div>
 	</div>
-	<nav>
+	<div class="zerro"></div>
+	<nav id="menu" class="default">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-3"><a href="#" class="active nav-link">integration</a></div>
-				<div class="col-md-2 col-sm-6 col-xs-2"><a href="#" class="nav_link">backup</a></div>
-				<div class="col-md-3 col-sm-6 col-xs-3"><a href="#" class="nav_link">recovery</a></div>
-				<div class="col-md-4 col-sm-6 col-xs-4"><a href="#" id="nav_button">download now</a></div>
+				<div class="menu-item col-md-3 col-sm-12 col-xs-12 nav-a"><a href="#integration" class="nav_link">integration</a></div>
+				<div class="menu-item col-md-2 col-sm-12 col-xs-12 nav-a"><a href="#backup" class="nav_link">backup</a></div>
+				<div class="menu-item col-md-3 col-sm-12 col-xs-12 nav-a"><a href="#recovery" class="nav_link">recovery</a></div>
+				<div class="col-md-4 col-sm-12 col-xs-12"><a href="#" id="nav_button" download>download now</a></div>
 			</div>
 		</div>
 		</div>
 	</nav>
 	<hr class="navigation">
-	<div class="part1">
+	<div class="empty"></div>
+	<div id="integration" class="part1">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -128,7 +131,7 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-6 box-pad">
+			<div class="col-xs-12 col-sm-12 col-md-6 box-pad">
 				<ul>
 					<li>Create backups from storage snapshots up to <strong>20 times faster</strong> than competitive offerings</li>
 					<li>Improve DB protection by crating instant, secondary backups from storage</li>
@@ -140,7 +143,7 @@
 					<p class="center">Component of a Veeam backup with FAS stroager</p>
 				</figcaption>
 			</div>
-			<div class="col-xs-6 col-md-6 col-sx-6 box-pad">
+			<div class="col-xs-12 col-md-6 col-xs-12 col-sm-12 box-pad">
 				<ul>
 					<li>Recover Individual items or entire VMs quickly and efficiently from <strong>NetApp Snapshot&#169;, SnapMirror&#169;</strong> and <strong>SnapVault&#169;</strong> with <strong>Veeam Explorer<sup>TM</sup> for Storage Snapshots</strong></li>
 				</ul>
@@ -152,12 +155,11 @@
 							</figcaption>
 				</figure>
 			</div>
-
 		</div>
 	</div>
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-12">
+			<div class="col-md-12 col-sm-12 col-xs-12">
 				<p>In addition to fast backups and quick recovery from NetApp Snapshot, SnapMirror and SnapVault, NetApp FAS and FlexArray(V-Series) customers can meet the most stringent RTPO of Tier-1 application with:</p>
 			</div>
 		</div>
@@ -170,39 +172,41 @@
 					<li><strong>Reduce data lost</strong> by automating the creation of secondary backups from NetApp SnapVault.</li>
 				</ul>
 			</div>
-			<div class="col-xs-6 col-md-6 box-pad">
+			<div class="col-xs-12 col-md-6 col-sm-6 box-pad">
 				<ul>
 					<li><strong>Verified protection</strong> by automating the testing of backups to guarantee the recoveriability of ever file, application and virtual machine (VM)</li>
 					<li><strong>A cloud ready platform</strong> that enhaces data avalability by providing an efficient way get backups off site to a service provider</li>
 				</ul>
 			</div>
-			<div class="container">
-				<div class="row">
-					<col-md-12>
-						<figure>
-							<img src="img/schema.png" class="schema" alt="schema">
-							<figcaption>
-								<p>Ready for the cloud</p>
-							</figcaption>
-						</figure>
-						<div class="link-box">
-							<img src="img/video.png" class="icon" alt="whatch video"><a class="link-original" href="#">Whatch video on how Veeam integrates with NetApp</a>
-						</div>
-					</col-md-12>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row pad-left pad-right">
+			<div col-md-12 col-sm-12 col-xs-12 pad-left pad-right>
+				<figure>
+					<img src="img/schema.png" class="schema" alt="schema">
+					<figcaption>
+						<p>Ready for the cloud</p>
+					</figcaption>
+				</figure>
+				<div class="link-box">
+					<img src="img/video.png" class="icon" alt="whatch video"><a class="link-original" href="#">Whatch video on how Veeam integrates with NetApp</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="empty" id="backup"></div>
 	<div class="b-grey">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h2>Perform fast backups from NetApp Storage Snapshots</h2>
-					<h3>Dramatically improve vSphere backup</h3>
+
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-8 box-pad">
+					<h3>Dramatically improve vSphere backup</h3>
 					<p>Taking VMWare vSphere snapshots can produce a serious burden on virtual machine(VM) performance, and it can take considerable effort by administratirs to overcome this technicsl chsllenge and meet the required SLAs.</p>
 					<p>Veeam dramaticaly improves this process providing built-in integration with your production storage, leveraging storage snapshots functionality to reduce the impact on the enviroment from vSphere snapshot removal during backup and replication.</p>
 					<p>Don't be stuck with once-a-day backups for I/O intensive workloads - make backups and replicas as often as every 15 minutes!</p>
@@ -235,7 +239,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<iframe height="100%" src="https://www.youtube.com/embed/Fhxa8QDU2iw" frameborder="0" allowfullscreen></iframe>
+					<iframe id="second-video" height="100%" src="https://www.youtube.com/embed/Fhxa8QDU2iw" frameborder="0" allowfullscreen></iframe>
 					<!-- <video poster="img/integration.jpg" class="right_image"></video> -->
 				</div>
 			</div>
@@ -266,7 +270,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="empty" id="recovery"></div>
+	<div class="container" id="enjoy">
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Enjoy quick granular recovery for NetApp Storage Snapshots</h2>
@@ -311,33 +316,35 @@
 			<figure>
 				<img src="img/schema.png" class="storage-system" alt="storage system">
 				<figcaption>
-					<p class="center">For image description</p>
+					<p>For image description</p>
 				</figcaption>
 			</figure>
 			<hr class="hr">
 		</div>
 	</div>
-	<div class="container">
-		<div class="col-md-5">
-			<h3>Supported storage:</h3>
-			<p>For NetApp, all Data ONTAP based storage, including:</p>
-		</div>
-		<div class="col-md-3">
-			<ul>
-				<li>NetApp FAS</li>
-				<li>NetApp FlexArray (V-Series)</li>
-			</ul>
+	<div class="container" id="supported_srorage">
+		<div class="row">
+			<div class="col-md-5">
 
-		</div>
-		<div class="col-md-4">
-			<ul>
-				<li>NetApp Data ONTAP Edge VSA</li>
-				<li>IBM N Series</li>
-			</ul>
+				<h3>Supported storage:</h3>
+				<p>For NetApp, all Data ONTAP based storage, including:</p>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>NetApp FAS</li>
+					<li>NetApp FlexArray (V-Series)</li>
+				</ul>
+
+			</div>
+			<div class="col-md-4">
+				<ul>
+					<li>NetApp Data ONTAP Edge VSA</li>
+					<li>IBM N Series</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	</div>
-	<div class="b-grey">
+	<div class="b-grey" id="about">
 		<div class="container">
 			<div class="col-md-12">
 				<h2>About Veeam Software</h2>
@@ -352,60 +359,61 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<p>Copyright&#169; 2015 Veeam&#174; Software</p>
-						<ul class="footer-list">
-					<li class="footer-li"><a id="footer_link_0">Privacy policy & Cookies</a>
-					</li>
+					<ul class="footer-list">
+						<li class="footer-li"><a id="footer_link_0">Privacy policy & Cookies</a>
+						</li>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-sm-3 col-xs-12 border-left">
 					<li class="footer-li"><a class="footer-link">white papers</a></li>
 					<li class="footer-li"><a class="footer-link">webinars</a></li>
 					<li class="footer-li"><a class="footer-link">product demos</a></li>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-sm-3 col-xs-12 border-right">
 					<li class="footer-li"><a class="footer-link">webinars</a></li>
 					<li class="footer-li"><a class="footer-link">veeam live</a></li>
 				</div>
-				<div class="col-md-2">
-				<li class="footer-li"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="21px">
-							<image x="0px" y="0px" width="21px" height="21px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgLBzkk/A5tAAAAgUlEQVQoz8WT2w1AQBRED/GvhS1BB7YVnehICasDWwId6GB8kAiXWInE7N9kcnfOPjKJROWpwVfR4tId6Zmo8QdXVp0QQv5oX01tAIejOvlm5iCEgt3MYs1pWDORCEDcStwWCBvQutqnArvKJ6yQjvXFxf4etW/A0cLp8AHI/v4FC/f6pPzq8jaJAAAAAElFTkSuQmCC"
-							/>
-						</svg>
-						<a class="footer-link">facebook</a></li>
-						<li class="footer-li"><svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="21px" height="20px">
-<image  x="0px" y="0px" width="21px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUGQ3GcyFKAAAAo0lEQVQoz9WSQRGDMBBFP1WAhDgoEpCABCQgASeVwFQBdRAcVAJ18HoJyYbkwKkz/XvZ2X3zZzfZBnRRt6vg79FNr1OFQytWI0I45lRPaM/AHvIHCuFYSnRGtEz4kB9BiXo6AyTXqLTWU1tlua62FkwV16XmKt3lTp69hrorTLTGseVtmzm6myEcPuthv2A02BzfOKrJjnDTR5IrZpYkNX90r18BZx6f0CokWgAAAABJRU5ErkJggg==" />
-</svg>
-</svg>
-						<a class="footer-link">twitter</a></li>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<li class="footer-li">
+						<a class="footer-link" href="www.facebook.com">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="21px">
+								<image x="0px" y="0px" width="21px" height="21px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgLBzkk/A5tAAAAgUlEQVQoz8WT2w1AQBRED/GvhS1BB7YVnehICasDWwId6GB8kAiXWInE7N9kcnfOPjKJROWpwVfR4tId6Zmo8QdXVp0QQv5oX01tAIejOvlm5iCEgt3MYs1pWDORCEDcStwWCBvQutqnArvKJ6yQjvXFxf4etW/A0cLp8AHI/v4FC/f6pPzq8jaJAAAAAElFTkSuQmCC"
+								/>
+							</svg>
+						</a>
+						<a class="footer-link" href="www.facebook.com">facebook</a></li>
+					<li class="footer-li">
+						<a class="footer-link" href="www.twitter.com">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="20px">
+								<image x="0px" y="0px" width="21px" height="20px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUGQ3GcyFKAAAAo0lEQVQoz9WSQRGDMBBFP1WAhDgoEpCABCQgASeVwFQBdRAcVAJ18HoJyYbkwKkz/XvZ2X3zZzfZBnRRt6vg79FNr1OFQytWI0I45lRPaM/AHvIHCuFYSnRGtEz4kB9BiXo6AyTXqLTWU1tlua62FkwV16XmKt3lTp69hrorTLTGseVtmzm6myEcPuthv2A02BzfOKrJjnDTR5IrZpYkNX90r18BZx6f0CokWgAAAABJRU5ErkJggg=="
+								/>
+							</svg>
+						</a>
+						<a class="footer-link" href="www.twitter.com">twitter</a></li>
 				</div>
-				<div class="col-md-2">
-						<li class="footer-li">
-							<svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="21px" height="21px">
-<image  x="0px" y="0px" width="21px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUFyAdL1CxAAAAiklEQVQoz8WRyw2DMBBEnyMKoAMoxSVQQqjEpILQAaSSpAUqwFQyXIBwMTYHxKy02sPTfmaNRKIeqeD1aI2hP0LNdpYBSsaUrm9KXFrXqLKt6pkoeOL5AI4XP8DuJmmVFbKSvkKoEks0KxAyy9PRkcPflSyAOipgoMXHXpDvcgQ99PUm9MS3bt91BkEYN0AhRN88AAAAAElFTkSuQmCC" />
-</svg>
-						<a class="footer-link">linkedin</a></li>
-
-						<li class="footer-li"><svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="21px" height="20px">
-<image  x="0px" y="0px" width="21px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUGBy12DD5AAAA4ElEQVQoz63S0U0CQRDG8R/Gd5cK2A68ErYD7QCsQKhErUCsgBK4q0A64OiADsaHO5RA0Avxm2zmYf87mflmRxEG6mYoeIo+YTEMzWr3WkvU/bmATi08epMtNWh+q5okCbt/HIsKE42pOxuT46vRNb4ujI3OYnxkXnTaxizWsY6XEKLqcxfbDjlUbdVarUZWZEVBpaA9baC1s1OZWatkK3Of3s0PwO2FGTZ4QCsN9fXjZ7nn6LT3N9vgWTltIOs+x95eUttLXjWyZf/426yIVZQokY5MSlGixOoAXLWtP/UF7phtHBeSoHMAAAAASUVORK5CYII=" />
-</svg>
-					<a class="footer-link">youtube</a></li>
-				</ul>
-
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<li class="footer-li">
+						<label for id="linkedin">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="21px">
+								<image x="0px" y="0px" width="21px" height="21px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUFyAdL1CxAAAAiklEQVQoz8WRyw2DMBBEnyMKoAMoxSVQQqjEpILQAaSSpAUqwFQyXIBwMTYHxKy02sPTfmaNRKIeqeD1aI2hP0LNdpYBSsaUrm9KXFrXqLKt6pkoeOL5AI4XP8DuJmmVFbKSvkKoEks0KxAyy9PRkcPflSyAOipgoMXHXpDvcgQ99PUm9MS3bt91BkEYN0AhRN88AAAAAElFTkSuQmCC"
+								/>
+							</svg>
+						</label>
+						<label id="linkedin"><a class="footer-link" href="http://www.linkedin.com">linkedin</a></li></label>
+					<li class="footer-li">
+							<label for id="toytube"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="20px">
+								<image x="0px" y="0px" width="21px" height="20px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgCxgUGBy12DD5AAAA4ElEQVQoz63S0U0CQRDG8R/Gd5cK2A68ErYD7QCsQKhErUCsgBK4q0A64OiADsaHO5RA0Avxm2zmYf87mflmRxEG6mYoeIo+YTEMzWr3WkvU/bmATi08epMtNWh+q5okCbt/HIsKE42pOxuT46vRNb4ujI3OYnxkXnTaxizWsY6XEKLqcxfbDjlUbdVarUZWZEVBpaA9baC1s1OZWatkK3Of3s0PwO2FGTZ4QCsN9fXjZ7nn6LT3N9vgWTltIOs+x95eUttLXjWyZf/426yIVZQokY5MSlGixOoAXLWtP/UF7phtHBeSoHMAAAAASUVORK5CYII="
+								/>
+								</svg></label>
+						<label id="youtube"><a class="footer-link" href="http://www.youtube.com">youtube</a></li></label>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script src="js/bootstrap.min.js"></script>>
+	<script src="js/bootstrap.min.js"></script>	
+<script src="js/menu.js"></script>
 </body>
-
+<!-- Thanks for the opportunity -->
 </html>

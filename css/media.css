@@ -1,0 +1,123 @@
+@media (min-width: 300px) and (max-width: 550px) {
+  .img-logo {
+    width: 100%;
+  }
+  img.logo-image {
+    width: 100%;
+  }
+  .logo-text {
+    font-size: 14px;
+    /*margin-right: 140px;*/
+    width: 100%;
+    right: -30px;
+  }
+  /*медиа-запрос для меню*/
+  a.nav_link {
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+  }
+  /*меняем кнопку*/
+  a#nav_button {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    background-color: white;
+    color: red;
+  }
+  a#nav_button:hover {
+    background-color: white;
+    color: red;
+  }
+  .nav-a {
+    text-align: center;
+    line-height: 26px;
+  }
+  /*отступы для о veeam чтобы красиво смотрелось*/
+  .letters-18 {
+    margin-top: 30px;
+  }
+  /*уменьшаем отступы сверху и снизу для h2*/
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  /*удаляем левый отступ у ul футера*/
+  .footer-list {
+    padding-left: 0;
+    font-size: 8px;
+  }
+  a.footer-link {
+    font-size: 12px;
+    line-height: 2em;
+  }
+  footer {
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 699px) {
+  /*медиа-запрос для меню*/
+  a.nav_link {
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+  }
+  /*меняем кнопку*/
+  a#nav_button {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    background-color: white;
+    color: red;
+  }
+  a#nav_button:hover {
+    background-color: white;
+    color: red;
+  }
+  footer {
+    padding-bottom: 150px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  a.nav_link {
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+  }
+  /*меняем кнопку*/
+  a#nav_button {
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+    background-color: white;
+    color: red;
+    margin-bottom: 5px;
+  }
+  a#nav_button:hover {
+    background-color: white;
+    color: red;
+  }
+  .col-xs-12>.nav-link {
+    text-align: center;
+    line-height: 25px;
+  }
+  /*удаляем левый отступ у ul футера*/
+  .footer-list {
+    padding-left: 0;
+  }
+  footer {
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 990px) {
+	form{
+	width: 80%;
+    margin: 0 auto;
+	}
+}
